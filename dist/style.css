@@ -11,7 +11,7 @@ body {
   display: grid;
   place-content: center;
   text-align: center;
-  background-image: url(https://i.pinimg.com/originals/a6/d2/bb/a6d2bbcac5dadc2043331ec34ab8e4ba.jpg);
+  background-image: url(bg.jpg);
 }
 
 .typing-demo {
@@ -21,8 +21,8 @@ body {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
+  font-family: "Source Code Pro", monospace;
+  font-size: 3em ;
 }
 
 .subtitle {
@@ -31,8 +31,8 @@ body {
   font-weight: 400;
   opacity: 0;
   transform: translateY(3rem);
-  -webkit-animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
-          animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  -webkit-animation: fadeInUp 0.5s ease +3s forwards;
+          animation: fadeInUp 0.5s ease +3s forwards;
 }
 
 @-webkit-keyframes typewriter {
@@ -87,16 +87,6 @@ body {
   background-image: url(https://i.pinimg.com/originals/a6/d2/bb/a6d2bbcac5dadc2043331ec34ab8e4ba.jpg);
 }
 
-.typing-demo {
-  width: 22ch;
-  -webkit-animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-          animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
 
 @-webkit-keyframes typing {
   from {
@@ -117,10 +107,10 @@ body {
 
 .social-menu ul{
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   padding: 0;
-  margin: 0;
+  
   transform: translate(-50%, -50%);
   display: flex;
 }
